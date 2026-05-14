@@ -155,29 +155,29 @@ with tab_explore:
         flag = drug_row["flag"]
         if flag == "patient-worse-than-FAERS":
             st.markdown(
-                f"<div style='background:#FDF6F2;border-left:4px solid {CORAL};padding:1rem;border-radius:4px;'>"
+                f"<div style='background:#FDF6F2;border-left:4px solid {CORAL};padding:1rem;border-radius:4px;color:{DARK};'>"
                 f"<strong style='color:{CORAL};'>🚩 Flagged: patients report worse than FDA suggests</strong><br>"
-                f"This drug's patient-reported side-effect severity sits well above what FDA adverse-event "
+                f"<span style='color:{DARK};'>This drug's patient-reported side-effect severity sits well above what FDA adverse-event "
                 f"reporting would suggest. This pattern is common for drugs whose burden is in routine "
-                f"day-to-day tolerability rather than catastrophic events."
+                f"day-to-day tolerability rather than catastrophic events.</span>"
                 f"</div>",
                 unsafe_allow_html=True,
             )
         elif flag == "FAERS-worse-than-patient":
             st.markdown(
-                f"<div style='background:#F2F4F8;border-left:4px solid {SLATE};padding:1rem;border-radius:4px;'>"
+                f"<div style='background:#F2F4F8;border-left:4px solid {SLATE};padding:1rem;border-radius:4px;color:{DARK};'>"
                 f"<strong style='color:{SLATE};'>🚩 Flagged: FDA reports worse than patients experience</strong><br>"
-                f"This drug carries rare-but-serious adverse-event signals in FDA data, but most patients "
+                f"<span style='color:{DARK};'>This drug carries rare-but-serious adverse-event signals in FDA data, but most patients "
                 f"in routine use describe tolerating it well. Both signals are valid — they measure "
-                f"different aspects of safety."
+                f"different aspects of safety.</span>"
                 f"</div>",
                 unsafe_allow_html=True,
             )
         else:
             st.markdown(
-                f"<div style='background:#F0F4F1;border-left:4px solid {SAGE};padding:1rem;border-radius:4px;'>"
+                f"<div style='background:#F0F4F1;border-left:4px solid {SAGE};padding:1rem;border-radius:4px;color:{DARK};'>"
                 f"<strong style='color:{SAGE};'>✓ Agreement</strong><br>"
-                f"Patient experience and FDA reporting tell a consistent story for this drug."
+                f"<span style='color:{DARK};'>Patient experience and FDA reporting tell a consistent story for this drug.</span>"
                 f"</div>",
                 unsafe_allow_html=True,
             )
