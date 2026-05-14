@@ -436,14 +436,14 @@ with tab_about:
     with cB:
         st.markdown(
             f"""
-            <div style='background:#FAFBFC;border:1px solid #E5E7EB;padding:1rem;border-radius:6px;'>
-              <h4 style='color:{NAVY};margin-top:0;'>By the numbers</h4>
-              <ul style='line-height:1.6;'>
-                <li><strong>212,698</strong> Drugs.com reviews scored</li>
-                <li><strong>697</strong> drugs in analysis cohort</li>
-                <li><strong>105</strong> flagged as divergent</li>
-                <li><strong>103 of 105</strong> robust to bootstrap CI</li>
-                <li><strong>+7–9%</strong> better predictions with FAERS data</li>
+            <div style='background:{NAVY};padding:1.2rem;border-radius:6px;color:#FFFFFF;'>
+              <h4 style='color:#FFFFFF;margin-top:0;margin-bottom:0.8rem;'>By the numbers</h4>
+              <ul style='line-height:1.8;color:#FFFFFF;padding-left:1.2rem;margin:0;'>
+                <li><strong style='color:{CORAL};'>212,698</strong> Drugs.com reviews scored</li>
+                <li><strong style='color:{CORAL};'>697</strong> drugs in analysis cohort</li>
+                <li><strong style='color:{CORAL};'>105</strong> flagged as divergent</li>
+                <li><strong style='color:{CORAL};'>103 of 105</strong> robust to bootstrap CI</li>
+                <li><strong style='color:{CORAL};'>+7–9%</strong> better predictions with FAERS data</li>
               </ul>
             </div>
             """,
